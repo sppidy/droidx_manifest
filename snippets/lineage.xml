@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-
+  <!-- additional source-->
+  <remote fetch="https://github.com/Garnet-Playground" name="gp" />
   <!-- additional repos -->
   <project path="hardware/lineage/compat" name="android_hardware_lineage_compat" remote="lineage"/>
-      
+  
   <!-- prebuilt repos -->
   <project path="prebuilts/tools-lineage" name="android_prebuilts_tools-lineage" clone-depth="1" remote="lineage" />
   <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" clone-depth="1" remote="aosp" revision="refs/tags/android-14.0.0_r0.76" />
@@ -39,8 +40,7 @@
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" groups="pdk,linux,arm" remote="lineage" clone-depth="1" revision="lineage-19.1" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" groups="pdk,linux,arm" remote="lineage" clone-depth="1" revision="lineage-19.1" />
 
-  <!-- Hardware Repo -->
-   <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="lineage" revision="lineage-21"/>
+  <!-- Hardware Repo Moved to local_manifests as using custom repo-->
    
   <!-- Extract-utils -->
   <project path="tools/extract-utils" name="android_tools_extract-utils" remote="lineage" revision="lineage-21.0" />
