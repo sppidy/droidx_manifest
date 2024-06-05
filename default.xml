@@ -29,6 +29,10 @@
           fetch="https://github.com/LineageOS"
           revision="lineage-21.0" />
 
+  <!-- Crdroid Github -->
+  <remote name="crdroid"
+          fetch="https://github.com/crdroidandroid/" />
+
   <superproject name="platform/superproject" remote="aosp" revision="android-14.0.0_r35"/>
   <contactinfo bugurl="go/repo-bug" />
 
